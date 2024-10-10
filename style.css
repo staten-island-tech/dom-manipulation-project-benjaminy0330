@@ -4,6 +4,7 @@ body, *{
     margin: 0;
     box-sizing: border-box;
     font-size: 62.5%;
+    background-color: aliceblue;
 }
 
 
@@ -11,18 +12,32 @@ body, *{
     font-size: 8rem;
     text-align: center;
     color: red;
+    margin-bottom: 2rem;
 }
 .cards{
     color: blue;
+    align-items: center;
 }
 
 
 .btn{
-    font-size: 5rem;
-    text-align: center;
-}
-
-.textbox{
     font-size: 3rem;
     align-items: center;
 }
+
+.textbox{
+    font-size: 2rem;
+    align-items: center;
+}
+
+.insert{
+    font-size: 3rem;
+    align-items: center;
+}
+
+.card{
+    font-size: 6rem;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
