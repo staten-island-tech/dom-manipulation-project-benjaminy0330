@@ -17,27 +17,40 @@ body, *{
 .cards{
     color: blue;
     align-items: center;
+    text-align: center;
 }
 
 
 .btn{
     font-size: 3rem;
     align-items: center;
+    text-align: center;
 }
 
 .textbox{
     font-size: 2rem;
     align-items: center;
+    text-align: center;
 }
 
 .insert{
     font-size: 3rem;
     align-items: center;
+    text-align: center;
 }
 
 .card{
     font-size: 6rem;
     text-align: center;
     flex-wrap: wrap;
+    border-radius: 3px;
+    background-color:saddlebrown;
+    border-color: red solid;
+    
+    
 }
 
+.textbox{
+    text-align: center;
+    align-items: center;
+}
