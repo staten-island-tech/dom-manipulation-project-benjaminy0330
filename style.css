@@ -8,7 +8,8 @@ body, *{
 }
 
 body{
-    background-color: azure;
+    background-color: rgb(178, 209, 209);
+    font-family: "Kanit", sans-serif;
 }
 
 .title{
@@ -18,13 +19,17 @@ body{
     
 }
 
-
+.instructions{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
 
 .card{
     border: 8px solid white;
     border-radius: 2rem;
-    width: 50rem;
+    width: 45rem;
     text-align: center;
     background-color: rgb(144, 158, 158);
     box-shadow: 5px 5px 5px rgb(129, 129, 124);
@@ -32,6 +37,7 @@ body{
     padding-bottom: 2rem;
     color: white;
     margin: 1rem;
+    font-size: 8rem;
 }
 
 #inputs{
@@ -43,7 +49,7 @@ body{
 
 #card-box{
     color: rgb(255, 0, 0);
-    font-size: 10rem;
+    font-size: 8rem;
     display: flex;
     justify-content: space-around;
     padding-bottom: 3rem;
@@ -52,3 +58,13 @@ body{
 
 }
 
+.image{
+    width: 32rem;
+    margin-top: 2rem;
+}
+
+.deletebutton{
+    font-size: 2.5rem;
+    text-align: center;
+    color: red;
+}
