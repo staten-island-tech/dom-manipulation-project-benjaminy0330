@@ -1,16 +1,18 @@
 const DOMSelectors = {
     button: document.getElementById("btn"),
-    box: document.getElementById("container-box"),
-    input: document.querySelector(`#input`),
+    cardBox: document.getElementById("inputs"),  // Card container
+    inputBox: document.getElementById("card-box"), // Input container
+    input: document.querySelector(`#input`),       // Input element
 };
 
-
-/*const cat = "meow";
-DOMSelectors.box.insertAdjacentHTML("afterend",`<h1>We are an ${cat}</h1>`
-);*/
-
 DOMSelectors.button.addEventListener("click", function(){
-    let input = DOMSelectors.input.value;
-    DOMSelectors.box.insertAdjacentHTML("beforeend", `<p> ${input} </p>`);
+    let inputValue = DOMSelectors.input.value; 
+    let inputHTML = `
+        <div class="card">
+            ${inputValue}
+        </div>
+    
+    `;
+    DOMSelectors.inputBox.insertAdjacentHTML("beforeend", inputHTML);
     DOMSelectors.input.value = "";
 });

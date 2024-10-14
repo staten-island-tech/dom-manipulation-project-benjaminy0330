@@ -1,12 +1,54 @@
-#container-box{
-    background-color: black;
+html,
+body, *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
     
-    font-size: 2vh;
-    color: cornsilk;
+}
+
+body{
+    background-color: azure;
+}
+
+.title{
+    text-align: center;
+    font-size: 6rem;
+    margin: 4rem;
+    
+}
+
+
+
+
+.card{
+    border: 8px solid white;
+    border-radius: 2rem;
+    width: 50rem;
+    text-align: center;
+    background-color: rgb(144, 158, 158);
+    box-shadow: 5px 5px 5px rgb(129, 129, 124);
+    transition: 0.2s;
+    padding-bottom: 2rem;
+    color: white;
+    margin: 1rem;
+}
+
+#inputs{
+    color: rgb(17, 10, 10);
+    font-size: 8rem;
     text-align: center;
     
 }
 
-.cat-poster{
-    width: 10rem;
+#card-box{
+    color: rgb(255, 0, 0);
+    font-size: 10rem;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    flex-wrap: wrap; 
+
 }
+
