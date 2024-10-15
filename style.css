@@ -47,7 +47,7 @@ body{
     
 }
 
-#card-box{
+#card-holder{
     color: rgb(255, 0, 0);
     font-size: 8rem;
     display: flex;
