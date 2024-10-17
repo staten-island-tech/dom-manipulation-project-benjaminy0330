@@ -19,6 +19,7 @@ DOMSelectors.button.addEventListener("click", function(){
             <h2> ${textValue} </h2>
             <img src="${imageUrl}" alt="User inputed image" class ="image">
             <p> ${subValue} </p>
+            <button type="button" id="dbtn" class = "dbtn">Remove</button>
             
         </div>
         `;
@@ -27,11 +28,21 @@ DOMSelectors.button.addEventListener("click", function(){
     DOMSelectors.textInput.value = "";
     DOMSelectors.subInput.value = "";
     DOMSelectors.imageInput.value = "";
+}
 
-});
+);
+
+/*function clearinput(){
+    DOMSelectors.textInput.value = "";
+    DOMSelectors.subInput.value = "";
+    DOMSelectors.imageInput.value = "";
+}*/
+
+
+
 
 /*DOMSelectors.deletebutton.addEventListener("click", function(){
-    h1.remove();
+    card.remove();
 });*/
 
 DOMSelectors.clearbutton.addEventListener("click", function() {
