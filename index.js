@@ -5,7 +5,9 @@ const DOMSelectors = {
     subInput: document.getElementById("input-sub"), //subtitle text that is added
     imageInput: document.getElementById("input-image"), //img url that is addedd
     clearbutton: document.getElementById("cbtn"), //button that clears page
-    deletebutton: document.getElementById("dbtn"),
+    
+    
+    
 
 };
 
@@ -15,35 +17,33 @@ DOMSelectors.button.addEventListener("click", function(){
     let subValue = DOMSelectors.subInput.value;
     
     let inputHTML = `
-       <div class="card">
+       <div class="card" id = "card" >
             <h2> ${textValue} </h2>
             <img src="${imageUrl}" alt="User inputed image" class ="image">
             <p> ${subValue} </p>
             <button type="button" id="dbtn" class = "dbtn">Remove</button>
-            
         </div>
         `;
+
     
-    DOMSelectors.cardBox.insertAdjacentHTML("beforeend", inputHTML); 
+    DOMSelectors.cardBox.insertAdjacentHTML("beforeend", inputHTML); //puts card into cardBox
+    clearinput();
+   
+
+});
+
+
+
+function clearinput(){
     DOMSelectors.textInput.value = "";
     DOMSelectors.subInput.value = "";
     DOMSelectors.imageInput.value = "";
 }
 
-);
-
-/*function clearinput(){
-    DOMSelectors.textInput.value = "";
-    DOMSelectors.subInput.value = "";
-    DOMSelectors.imageInput.value = "";
-}*/
 
 
 
 
-/*DOMSelectors.deletebutton.addEventListener("click", function(){
-    card.remove();
-});*/
 
 DOMSelectors.clearbutton.addEventListener("click", function() {
     location.reload(); //refreshes page to clear all created cards
@@ -51,3 +51,4 @@ DOMSelectors.clearbutton.addEventListener("click", function() {
 
 //h1.remove();
 //<button type="button" id="dbtn">Remove</button>
+//deletebutton: document.getElementById("dbtn"),
